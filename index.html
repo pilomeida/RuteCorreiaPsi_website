@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rute Correia — Psicóloga Clínica e Psicoterapeuta</title>
+  <meta name="description" content="Psicóloga clínica e psicoterapeuta em Lisboa e Mafra. Consultas presenciais e online. Psicoterapia e Psicogerontologia." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo" aria-label="Rute Correia — Início">
+        <img src="assets/logo.png" alt="Rute Correia Psi" />
+      </a>
+      <div class="navbar__nav" id="desktop-nav">
+        <a href="index.html"    class="navbar__link" data-page="index.html">Início</a>
+        <a href="pratica.html"  class="navbar__link" data-page="pratica.html">A Minha Prática</a>
+        <a href="eu.html"       class="navbar__link" data-page="eu.html">Acerca de Mim</a>
+        <a href="faqs.html"     class="navbar__link" data-page="faqs.html">Perguntas Frequentes</a>
+        <a href="contacto.html" class="btn btn-primary" style="font-size:15px;padding:11px 24px;">Agendamento</a>
+      </div>
+      <button class="navbar__burger" id="burger" aria-expanded="false" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="navbar__mobile" id="mobile-nav">
+    <a href="index.html"    class="navbar__link">Início</a>
+    <a href="pratica.html"  class="navbar__link">A Minha Prática</a>
+    <a href="eu.html"       class="navbar__link">Acerca de Mim</a>
+    <a href="faqs.html"     class="navbar__link">Perguntas Frequentes</a>
+    <a href="contacto.html" class="btn btn-primary" style="width:fit-content;">Agendamento</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero hero--home" aria-label="Cabeçalho">
+    <div class="hero__content">
+
+      <!-- Title block — upper left, ~1/3 height -->
+      <div class="hero__title-block">
+        <h1>Cuide de Si.</h1>
+        <p class="hero__subtitle">Um espaço seguro para enfrentar os<br />desafios emocionais da sua vida.</p>
+      </div>
+
+      <!-- Welcome block — bottom right quadrant -->
+      <div class="hero__bottom-row">
+        <div class="hero__welcome-block">
+          <h2>Bem-vindo a este espaço pensado em si.</h2>
+          <p>Este é um espaço criado com cuidado para quem procura apoio psicológico ou simplesmente quer compreender melhor o que está a sentir.</p>
+          <p>A psicoterapia pode ser um caminho de descoberta, de ajustamento e de crescimento pessoal — independentemente da fase da vida em que se encontra.</p>
+          <p>Aqui encontrará informação sobre a minha prática, as áreas em que trabalho, quem sou e como entrar em contacto. Explore ao seu ritmo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Explore o site ── -->
+  <section class="section section--warm">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore o site</h2>
+        <p>Conheça os diferentes espaços desta página e encontre a informação que procura.</p>
+      </div>
+      <div class="explore-grid">
+        <a href="pratica.html" class="explore-card">
+          <span class="explore-card__label">Serviços</span>
+          <span class="explore-card__title">A Minha Prática</span>
+          <span class="explore-card__desc">Conheça as abordagens terapêuticas que utilizo — Psicoterapia e Psicogerontologia — e as áreas em que trabalho.</span>
+          <span class="explore-card__arrow">→</span>
+        </a>
+        <a href="eu.html" class="explore-card">
+          <span class="explore-card__label">Sobre mim</span>
+          <span class="explore-card__title">Acerca de Mim</span>
+          <span class="explore-card__desc">Saiba quem sou, o meu percurso académico e profissional, e a abordagem que orienta o meu trabalho clínico.</span>
+          <span class="explore-card__arrow">→</span>
+        </a>
+        <a href="faqs.html" class="explore-card">
+          <span class="explore-card__label">Informação</span>
+          <span class="explore-card__title">Perguntas Frequentes</span>
+          <span class="explore-card__desc">Respostas às dúvidas mais comuns sobre o processo terapêutico, como funciona uma consulta e o que pode esperar.</span>
+          <span class="explore-card__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact Teaser ── -->
+  <section class="contact-teaser">
+    <div class="container">
+      <div class="contact-teaser__grid">
+        <div>
+          <h2>Utilize o formulário para me contactar — responderei em breve</h2>
+          <p>Se pretende agendar uma consulta ou simplesmente colocar uma questão, pode utilizar o formulário ao lado ou enviar uma mensagem diretamente por email ou <a href="https://wa.me/351937809700" style="color:var(--primary);text-decoration:underline;" target="_blank" rel="noopener">WhatsApp</a>.</p>
+          <p>Responderei o mais breve possível — normalmente dentro de 24–48 horas úteis.</p>
+          <br />
+          <a href="contacto.html" class="btn btn-secondary">Ir para o agendamento →</a>
+        </div>
+        <div class="card">
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="home-nome">Nome</label>
+              <input type="text" id="home-nome" name="nome" placeholder="O seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="home-email">Email</label>
+              <input type="email" id="home-email" name="email" placeholder="o.seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="home-msg">Mensagem</label>
+              <textarea id="home-msg" name="mensagem" placeholder="Como posso ajudar?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── Situations Accordion ── -->
+  <section class="situations-section">
+    <div class="container">
+      <h2>Reconhece-se em algumas destas situações?</h2>
+      <p class="subtitle">Já pensou em lhes "dar sentido"?</p>
+
+      <div class="accordion" role="list">
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Sente-se frequentemente ansioso/a, preocupado/a ou em estado de alerta constante</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>A ansiedade é uma resposta natural do organismo perante situações percebidas como ameaçadoras. Quando se torna persistente ou desproporcional, pode interferir significativamente com a qualidade de vida. A psicoterapia pode ajudar a compreender as suas origens e a desenvolver estratégias para a gerir de forma mais ajustada.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Está a atravessar um luto ou uma perda significativa e sente dificuldade em seguir em frente</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>O luto é um processo natural de adaptação à perda — seja de uma pessoa, de um relacionamento, de uma fase de vida ou de uma identidade. Cada pessoa vive o luto de forma única e ao seu próprio ritmo. O acompanhamento psicoterapêutico pode oferecer um espaço seguro para processar essa experiência.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Sente uma tristeza persistente ou vazio que não consegue explicar</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>Sentimentos prolongados de tristeza, desânimo ou vazio podem ser sinais de que algo precisa de atenção. Não é necessário ter uma razão "suficientemente grande" para procurar apoio — o que sente é suficiente razão em si mesmo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Tem dificuldade em gerir as emoções — seja com explosões de raiva, seja com entorpecimento emocional</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>A regulação emocional é uma competência que pode ser desenvolvida. Seja porque sente que as emoções "transbordam" com facilidade, seja porque tem dificuldade em sentir ou nomear o que experiencia interiormente, a psicoterapia pode ser um espaço de aprendizagem e de ajustamento emocional.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">As suas relações pessoais — família, amigos, parceiro/a — geram-lhe sofrimento ou conflito recorrente</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>As relações interpessoais são frequentemente fonte de grande significado, mas também de sofrimento. Dificuldades de comunicação, padrões relacionais repetitivos, conflitos não resolvidos ou isolamento podem beneficiar de um olhar terapêutico que ajude a compreender e a transformar esses padrões.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Sente-se esgotado/a — física e emocionalmente — e já não tem energia para o que gostava de fazer</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>O esgotamento emocional — muitas vezes associado ao burnout — pode instalar-se de forma gradual e dificultar o funcionamento em múltiplas áreas da vida. Reconhecê-lo é o primeiro passo. O acompanhamento terapêutico pode apoiar o processo de recuperação e de reorganização das prioridades.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Está a adaptar-se a uma doença, cirurgia ou limitação física — sua ou de alguém próximo</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>Receber um diagnóstico, enfrentar uma cirurgia ou adaptar-se a uma condição crónica implica um processo de ajustamento que vai muito além do físico. O impacto emocional é real e merece atenção. A psicoterapia pode ser um apoio importante neste processo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Tem dificuldades com o sono — adormecer, manter o sono ou acordar muito cedo</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>Os problemas de sono têm frequentemente uma dimensão emocional e psicológica. Preocupações recorrentes, pensamentos intrusivos à noite ou um estado de ativação constante podem ser trabalhados terapeuticamente, muitas vezes com resultados significativos na qualidade do descanso.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Questiona-se sobre o sentido da vida ou sente que perdeu a motivação e o propósito</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>Questionar o sentido das coisas é profundamente humano. Quando essa questão se torna perturbadora ou paralisa, o espaço terapêutico pode oferecer um lugar para a explorar com segurança e sem julgamento.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Está numa fase de transição — reforma, divórcio, mudança de carreira, ninho vazio, emigração</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>As grandes transições de vida, mesmo quando desejadas, implicam perdas e reajustamentos identitários. Ter apoio durante essas fases pode fazer uma diferença significativa no modo como as atravessamos e no que construímos a seguir.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">É cuidador/a informal de um familiar e sente que está a negligenciar as suas próprias necessidades</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>Cuidar de outrem é um ato profundo de amor e dedicação — mas tem custos. O esgotamento do cuidador é uma realidade frequentemente silenciada. Cuidar de si não é egoísmo: é condição para poder continuar a cuidar de quem ama.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Sente que a sua relação com a alimentação, o corpo ou a imagem que tem de si próprio/a não é saudável</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>A relação com o corpo e com a alimentação é complexa e carregada de significado emocional. Dificuldades nesta área merecem atenção cuidadosa e um acompanhamento ajustado, sem julgamento e com genuíno respeito pela sua experiência.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" role="listitem">
+          <button class="accordion-btn" aria-expanded="false">
+            <span class="accordion-btn__text">Quer simplesmente crescer, conhecer-se melhor e desenvolver os seus recursos internos</span>
+            <span class="accordion-btn__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body" role="region">
+            <div class="accordion-body__inner">
+              <p>Não é necessário estar em sofrimento agudo para beneficiar da psicoterapia. Muitas pessoas procuram este espaço como um investimento no seu desenvolvimento pessoal — para se conhecerem melhor, tomarem decisões mais conscientes ou simplesmente viverem de forma mais plena.</p>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /accordion -->
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="Rute Correia Psi" class="footer__logo" />
+          <p class="footer__brand-name">Rute Correia</p>
+          <p class="footer__brand-sub">Psicóloga clínica e psicoterapeuta</p>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Localização</p>
+          <ul>
+            <li>Presencial em Lisboa e Mafra *</li>
+            <li>Remoto / Online</li>
+            <li style="color:var(--secondary-text);font-size:12px;">* Também domicílio, em casos excepcionais</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Contactos</p>
+          <ul>
+            <li><a href="mailto:geral@rutecorreiapsi.pt">geral@rutecorreiapsi.pt</a></li>
+            <li><a href="contacto.html">Formulário de contacto</a></li>
+            <li><a href="tel:+351937809700">+351 937 809 700</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <p class="footer__col-title">Termos e Condições</p>
+          <ul>
+            <li><a href="termos.html">Termos e Condições</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2024–2026 Rute Correia</p>
+        <p>Pode partilhar citando a fonte</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+node_modules/
+temporary screenshots/
+serve.mjs
+screenshot.mjs
+package.json
+package-lock.json
+.DS_Store
+
+# Dev/design reference files — not needed for deployment
+.claude/
+brand_assets/
+RC-Psi_site*.png
+site_assets/Pessoa passo futuro melhor_tonedSite.png
