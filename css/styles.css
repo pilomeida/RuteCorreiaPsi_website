@@ -152,6 +152,11 @@ p:last-child { margin-bottom: 0; }
   height: 68px;
   display: flex;
   align-items: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.navbar--hidden {
+  transform: translateY(-100%);
 }
 .navbar__inner {
   display: flex;

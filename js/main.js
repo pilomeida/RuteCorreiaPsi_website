@@ -95,10 +95,29 @@ function initContactForm() {
   });
 }
 
+/* ── Hide navbar on scroll down, reveal on scroll up ── */
+function initHideOnScroll() {
+  const navbar = document.querySelector('.navbar');
+  const mobileNav = document.getElementById('mobile-nav');
+  if (!navbar) return;
+  let lastY = 0;
+  window.addEventListener('scroll', () => {
+    const currentY = window.scrollY;
+    if (currentY > lastY && currentY > 80) {
+      navbar.classList.add('navbar--hidden');
+      mobileNav?.classList.remove('open');
+    } else {
+      navbar.classList.remove('navbar--hidden');
+    }
+    lastY = currentY;
+  }, { passive: true });
+}
+
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initAccordions();
   setActiveNavLink();
   initContactForm();
+  initHideOnScroll();
 });
