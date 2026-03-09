@@ -872,7 +872,7 @@ body { padding-top: 68px; }
 }
 
 @media (max-width: 768px) {
-  :root { --section-pad: 56px; }
+  :root { --section-pad: 64px; }
   h1 { font-size: 36px; }
   h2 { font-size: 28px; }
 
@@ -880,17 +880,20 @@ body { padding-top: 68px; }
   .navbar__burger { display: flex; }
 
   .explore-grid { grid-template-columns: 1fr; }
-  .two-col { grid-template-columns: 1fr; gap: 40px; }
+  .two-col { grid-template-columns: 1fr; gap: 48px; }
   .two-col--reverse { direction: ltr; }
 
   .contact-teaser__grid { grid-template-columns: 1fr; }
   .contacto-grid { grid-template-columns: 1fr; }
   .about-intro__grid { grid-template-columns: 1fr; }
   .about-background__grid { grid-template-columns: 1fr; }
-  .tag-grid { grid-template-columns: repeat(2, 1fr); }
+  .tag-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .tag { padding: 12px 14px; }
   .footer__inner { grid-template-columns: 1fr; gap: 32px; }
   .footer__bottom { gap: 4px; }
   .form-grid { grid-template-columns: 1fr; }
+
+  .accordion-btn { padding: 22px 0; }
 
   .hero--contacto .hero__content { padding: 56px 32px; }
 
@@ -899,7 +902,7 @@ body { padding-top: 68px; }
   /* Home hero — stack vertically on mobile */
   .hero--home .hero__content { padding: 48px 24px 40px; min-height: calc(100vh - 68px); }
   .hero__title-block { max-width: 100%; }
-  .hero__bottom-row { justify-content: flex-start; padding-right: 0; }
+  .hero__bottom-row { justify-content: flex-start; padding-right: 0; margin-top: 40px; }
   .hero__welcome-block { width: 100%; max-width: 100%; padding: 32px 28px; }
 }
 
