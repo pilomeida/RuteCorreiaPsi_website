@@ -70,15 +70,20 @@ function initContactForm() {
     btn.textContent = 'A enviar…';
     btn.disabled = true;
 
-    const formData = new FormData(form);
-    formData.append('_subject', 'Nova mensagem — Rute Correia Psi');
+    const data = Object.fromEntries(new FormData(form));
 
     try {
-      await fetch('https://formsubmit.co/ajax/geral@rutecorreiapsi.pt', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        mode: 'no-cors',
-        body: formData,
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({
+          access_key: '8a2cd285-6842-423c-80d3-0c40ea13ec68',
+          subject: 'Nova mensagem — Rute Correia Psi',
+          ...data,
+        }),
       });
+      const json = await res.json();
+      if (!json.success) throw new Error('send failed');
       btn.textContent = 'Mensagem enviada ✓';
       setTimeout(() => {
         btn.textContent = original;
