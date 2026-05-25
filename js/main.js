@@ -70,15 +70,15 @@ function initContactForm() {
     btn.textContent = 'A enviar…';
     btn.disabled = true;
 
-    const data = Object.fromEntries(new FormData(form));
+    const formData = new FormData(form);
+    formData.append('_subject', 'Nova mensagem — Rute Correia Psi');
 
     try {
-      const res = await fetch('https://formsubmit.co/ajax/geral@rutecorreiapsi.pt', {
+      await fetch('https://formsubmit.co/ajax/geral@rutecorreiapsi.pt', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ ...data, _subject: 'Nova mensagem — Rute Correia Psi' }),
+        mode: 'no-cors',
+        body: formData,
       });
-      if (!res.ok) throw new Error('send failed');
       btn.textContent = 'Mensagem enviada ✓';
       setTimeout(() => {
         btn.textContent = original;
