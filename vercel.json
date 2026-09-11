@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "rutecorreiapsi.pt"
+        }
+      ],
+      "destination": "https://www.rutecorreiapsi.pt/$1",
+      "permanent": true
+    },
+    {
+      "source": "/wp-content/(.*)",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}
