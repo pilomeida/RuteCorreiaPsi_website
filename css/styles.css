@@ -240,7 +240,7 @@ body { padding-top: 68px; }
 /* HOME — full-screen with park watercolor image */
 .hero--home {
   min-height: calc(100vh - 68px);
-  background-image: url('../site_assets/RCPsiSite_Watercolor_park_bright.png');
+  background-image: url('../site_assets/RCPsiSite_Watercolor_park_bright.webp');
   background-size: cover;
   background-position: center 40%;
   align-items: stretch; /* content spans full hero height */
@@ -331,7 +331,7 @@ body { padding-top: 68px; }
   pointer-events: none;
 }
 .hero--dark-img {
-  background-image: url('../site_assets/ConsultRuteCorreiaPsi_tonedSite.png');
+  background-image: url('../site_assets/ConsultRuteCorreiaPsi_tonedSite.webp');
   background-size: cover;
   background-position: center;
 }
@@ -362,7 +362,7 @@ body { padding-top: 68px; }
 .hero--faqs {
   min-height: 320px;
   justify-content: center;
-  background-image: url('../site_assets/TrigoTranquilidadeHarmonia2_tonedSite.png');
+  background-image: url('../site_assets/TrigoTranquilidadeHarmonia2_tonedSite.webp');
   background-size: cover;
   background-position: center;
 }
@@ -385,7 +385,7 @@ body { padding-top: 68px; }
 /* CONTACTO — person walking image */
 .hero--contacto {
   min-height: 420px;
-  background-image: url('../site_assets/PessoaPassoFuturoMelhor_tonedSite.png');
+  background-image: url('../site_assets/PessoaPassoFuturoMelhor_tonedSite.webp');
   background-size: cover;
   background-position: center 30%;
 }
